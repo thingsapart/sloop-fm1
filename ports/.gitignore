@@ -1,0 +1,41 @@
+# Keep only port source, build inputs, and build instructions.
+# Patterns are relative to ports/; add new build inputs explicitly.
+*
+!*/
+!.gitignore
+
+# Android host and build helpers.
+!android/README.md
+!android/AndroidManifest.xml
+!android/build.py
+!android/prepare.py
+!android/native/*.c
+!android/native/*.cpp
+!android/native/*.h
+!android/java/**/*.java
+
+# ESP32-P4 host and reproducible build configuration.
+!esp32p4/README.md
+!esp32p4/CMakeLists.txt
+!esp32p4/platformio.ini
+!esp32p4/partitions.csv
+!esp32p4/sdkconfig.defaults
+!esp32p4/dependencies.lock
+!esp32p4/sources.lock.json
+!esp32p4/engine/*.c
+!esp32p4/engine/*.h
+!esp32p4/src/*.c
+!esp32p4/src/*.cpp
+!esp32p4/src/*.h
+!esp32p4/src/CMakeLists.txt
+!esp32p4/src/idf_component.yml
+!esp32p4/tools/prepare.py
+!esp32p4/tools/pio_prepare.py
+!esp32p4/tools/requirements.txt
+
+# Prune generated trees, even when they contain source-shaped files.
+build/
+.pio/
+.toolchain/
+managed_components/
+__pycache__/

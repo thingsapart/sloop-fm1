@@ -1,0 +1,4 @@
+build/
+.toolchain/
+*.apk
+replay/*.patch

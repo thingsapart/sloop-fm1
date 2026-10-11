@@ -1,0 +1,10 @@
+build/
+.pio/
+managed_components/
+sdkconfig
+sdkconfig.old
+sdkconfig.*
+!sdkconfig.defaults
+__pycache__/
+lv_draw_sw_p4.c
+lv_obj_class_p4.c
